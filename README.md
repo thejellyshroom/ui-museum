@@ -1,19 +1,5 @@
 # UI Museum
 
-A virtual museum for studying emergent interface behaviors.
+A virtual museum for studying emergent interface behaviors: categorized UI patterns, specimen implementations, and museum-style writing.
 
-## Development
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-## Stack
-
-- Next.js App Router
-- TypeScript
-- Tailwind CSS v4
-- Optional Three.js atmosphere layer with CSS fallbacks
+Design and implementation are not started yet.
