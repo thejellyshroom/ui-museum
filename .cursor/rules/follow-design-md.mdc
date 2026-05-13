@@ -1,0 +1,28 @@
+---
+description: Treat in-repo design markdown as binding product and visual source of truth when present.
+alwaysApply: true
+---
+
+# Follow design markdown
+
+When any `DESIGN.md` or `design.md` exists in the repository, treat it as binding for UI and product work.
+
+## Discovery
+
+- Check the project root first. If the task touches a subtree, also check the nearest ancestor `DESIGN.md` or `design.md`.
+- If multiple files apply, use the nearest ancestor for the files being changed. Parent docs supply shared defaults; child docs may add scope-specific rules. Do not drop explicit don'ts from any applicable file.
+
+## Before UI work
+
+Read the applicable design markdown before proposing or implementing UI, styling, layout, motion, component patterns, or art direction.
+
+## Compliance
+
+- Follow declared tokens, patterns, constraints, accessibility requirements, and don'ts strictly unless the user explicitly overrides a rule.
+- Do not substitute nearby palettes, type genres, spacing rhythms, or motion levels that are not in the document.
+- When the document defines fallbacks or progressive enhancement, implement those paths; do not make decorative layers required for core use.
+- Prefer referencing the file by path over paraphrasing from memory.
+
+## When absent
+
+If no design markdown file is present, do not invent a design system or visual language for the repo.
